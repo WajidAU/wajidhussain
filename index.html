@@ -4,101 +4,676 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
-             body{
-                padding: 0;
-                margin: 0;
-             }
+        body{
+            padding: 0;
+            margin: 0;
+        }
 
-             .container{
-                background-color: rgba(8, 126, 53, 0.61);
-                height: 550px;
-                width: 550px;
-                margin-left: 50%;
-                transform: translateX(-50%);
-                margin-top: 50px;
-                border-radius: 20px;
-                
-
-             }
-
-             input{
-                height: 25px;
-                width: 250px;
-                position: relative;
-                background-color: aqua;
-                margin-left: 50%;
-                transform: translateX(-50%);
-                margin-top: 10px;
-                text-decoration: none;
-                border-style: none;
-                text-align: center;
-                border-radius: 10px;
-                justify-content: center;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: bold;
-                
-             }
-
-             .botton{
-                position:absolute;
-                margin-left: 50%;
-                transform: translateX(-50%);
-                 
-             }
-
-             .login{
-                height: 30px;
-                width: 80px;
-                background-color: aqua;
-                border-radius: 8px;
-                margin-left: 170px;
-                color: green;
-                padding: 5px;
-                padding-left: 20px;
-                text-align: center;
-                margin-top: 20px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: bold;
-                border-style: none;
-             }
-
-            input::placeholder{
-                margin: 10px;
-                margin-top: 200px;
-                color: green;
+        .header{
+            position: relative;
+            background-color: black;
+            height: 90px;
+            width: 100%;
             
-            }
-            .email{
-                margin-top: 250px
-            }
+        }
 
-            .container h1{
-                position: absolute;
+        .buttonfirst{
+         position: absolute;
+         color: blue;
+         display: flex;
+         margin-top: 33px;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: bold;
+         cursor: pointer;
+         margin-left: 30px;
+        }
+         
+        .buttonfirsts{
+         position: absolute;
+         color: red;
+         display: flex;
+         margin-top: 33px;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: bold;
+         cursor: pointer;
+         margin-left: 73px;
+
+        }
+
+        .buttonfirst:hover {
+            color: red;
+            transform: scale(1.1);
+            transition: 0.5s;
+            text-decoration-line: underline;
+        }
+
+        .buttonfirsts:hover{
+            color: red;
+            transform: scale(1.1);
+            transition: 0.5s;
+            text-decoration-line: underline;
+
+        }
+
+        .mid{
+            color: red;
+       
+        }
+
+        .midp:hover {
+            color: red;
+            transform: scale(1.1);
+            transition: 0.5s;
+            text-decoration-line: underline;
+        }
+
+        .midpo:hover {
+            color: red;
+            transform: scale(1.1);
+            transition: 0.5s;
+            text-decoration-line: underline;
+        }
+
+        .midpoi:hover {
+            color: red;
+            transform: scale(1.1);
+            transition: 0.5s;
+            text-decoration-line: underline;
+        }
+
+        .midpoin:hover {
+            color: red;
+            transform: scale(1.1);
+            transition: 0.5s;
+            text-decoration-line: underline;
+        }
+
+        .buttonmid{
+            position: absolute;
+            color: blue;
+            display: flex;
+            gap: 25px;
+            margin-left: 450px;
+            cursor: pointer;
+            margin-top: 15px;
         
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: bold;
-                color: rgb(92, 235, 156);
-                margin-top: 100px;
-                margin-left: 170px;
-            }
+        }
 
+        .mid:hover {
+            color: red;
+            transform: scale(1.1);
+            transition: 0.5s;
+            text-decoration-line: underline;
+        }
+
+        .buttonend{
+            margin-top: 13px;
+            margin-left: 250px;
+            padding: 6px;
+            padding-left: 18px;
+            padding-right: 18px;
+            color: blue;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            border-style: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttonend:hover {
+            background-color: red;
+            transform: scale(1.1);
+            transition: 0.5s;
+            text-decoration-line: underline;
+        }
+
+       .bigbox{
+        background-color: rgb(201, 208, 221);;
+        height: 633px;
+        width: 100%;
+       }
+
+       .circle{
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        margin-top: 90px;
+        margin-left: 950px;
+        border-radius: 100%;
+        border-style: solid;
+        border-color: red;
+        border-width: 3px;
+        
+        
+       }
+
+       img{
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+       }
+
+       .modify{
+        position: absolute;
+        font-size: 10px;
+        margin-left: 350px;
+        margin-top: 150px;
+        cursor: pointer;   
+
+       }
+
+       .w{ 
+        text-shadow: 2px 1px red;
+        font-size: 30px;
+        cursor: pointer;
+
+       }
+
+       .wa{
+        font-size: 35px;
+        cursor: pointer;
+
+       }
+
+       .waj{ 
+        font-size: 40px;
+        cursor: pointer;
+         
+       }
+
+       .waji{
+        padding-right: 550px;
+        margin-top: 5px;
+        font-size: 11px;
+       
+    }
+
+    .wajidhussain{
+        color: rgb(214, 8, 8);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+       .modification{
+               background-color: black;
+               color: white;
+               margin-left: 350px;
+               margin-top: 330px; 
+               border-style: none;
+               border-radius: 5px;
+               padding: 7px;
+               padding-left: 20px;
+               padding-right: 20px;
+               cursor: pointer;
+           
+       }
+
+       .modification:hover {
+        background-color: white;
+        color: black;
+        transform: scale(1.1);
+        transition: 0.5s;
+        text-decoration-line: underline;
+
+       }
+
+       .modifications{
+        background-color: red;
+        color: white;
+        border-style: none;
+        border-radius: 5px;
+        padding: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: pointer;
+        
+       }
+
+      .modifications:hover {
+        background-color: white;
+        color: black;
+        transform: scale(1.1);
+        transition: 0.5s;
+        text-decoration-line: underline;
+      }
+
+      .container{
+        position: relative;
+        background-color: black;
+        height: 650px;
+        width: 100%;
+      }
+
+      .circle2{
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 100px;
+        border-radius: 100%;
+        border-color: aqua;
+        border-style: solid;
+        height: 350px;
+        width: 350px;
+      }
+
+      .about{
+        position: absolute;
+       color: white;
+       margin-left: 650px;
+       margin-top: 200px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-weight: bold;
+       font-size: 25px;
+       cursor: pointer;
+       
+
+      }
+
+      .me{
+        position: absolute;
+       color: red;
+       margin-left: 730px;
+       margin-top: 200px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-weight: bold;
+       font-size: 25px;
+       cursor: pointer;
+        
+      }
+
+      .frontend{
+       position: absolute;
+       color: white;
+       margin-left: 650px;
+       margin-top: 230px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-weight: bold;
+       font-size: 30px;
+       cursor: pointer;
+        
+      }
+
+      .developer{
+       position: absolute;
+       color: red;
+       margin-left: 785px;
+       margin-top: 230px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-weight: bold;
+       font-size: 30px;
+       cursor: pointer;
+        
+      }
+
+      .para{
+       position: absolute;
+       color: white;
+       margin-left: 650px;
+       margin-right: 100px;
+       margin-top: 285px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-weight: bold;
+       font-size: 10px;
+       cursor: pointer;
+        
+      }
+      
+      .experience{
+        position: absolute;
+        background-color: red;
+        color: white;
+        padding: 4px;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 8px;
+        margin-left: 650px;
+        margin-top: 400px;
+        cursor: pointer;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        border-style: none;
+        border-radius: 6px;
+        
+      }
+
+      .experience:hover{
+        background-color: white;
+        color: red;
+        transform: scale(1.1);
+        transition: 0.9s;
+      }
+
+      .box1{
+        position: relative;
+        background-color:rgb(201, 208, 221); 
+        height: 650px;
+        width: 100%;
+      }
+
+      
+
+      .smallbox1{
+        position: absolute;
+        background-color: rgb(173, 136, 233);
+        border-style: none;
+        border-radius: 10px;
+        height: 550px;
+        width: 480px;
+        margin-left: 450px;
+        margin-top: 70px;
+      }
+
+      .wajid{
+        position: absolute;
+        margin-left: 150px;
+        margin-top: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .hussain{
+        position: absolute;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: red;
+        margin-left: 245px;
+        margin-top: 18px;
+
+      }
+
+      input{
+      
+        margin-left: 80px;
+        text-align: center;
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 8px;
+        margin-top: 10px;
+        padding-bottom: 5px;
+        border-radius: 8px;
+      }
+
+      .abc{
+        margin-top: 60px;
+        
+      }
+
+      .area{
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 80px;
+        padding-left: 153px;
+        padding-bottom: 180px;
+        border-style: solid;
+        border-radius: 8px;
+        
+      }
+
+      .sendmessage{
+        position: absolute;
+        margin-top: 240px;
+        margin-left: 175px;
+        padding: 8px;
+        padding-left: 18px;
+        padding-right: 18px;
+        border-style: none;
+        background-color: black;
+        color: white;
+        border-radius: 6px;
+      }
+
+      .sendmessage:hover{
+        background-color: white;
+        color: black;
+        transform: scale(1.1);
+        transition: 0.9s;
+      }
+
+      /* Small screens (Mobile) */
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 70px;
+    }
+
+    .buttonmid {
+        margin-left: 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttonend {
+        margin-left: 20px;
+        font-size: 14px;
+        padding: 5px 12px;
+    }
+
+    .bigbox {
+        height: auto;
+        padding: 20px;
+    }
+
+    .circle {
+        height: 200px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modify {
+        margin-left: 20px;
+        margin-top: 100px;
+        font-size: 14px;
+    }
+
+    .modification, .modifications {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .container {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .circle2 {
+        height: 250px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about, .me, .frontend, .developer {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .experience {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .smallbox1 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .abc input {
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .area {
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Medium screens (Tablets) */
+@media only screen and (max-width: 1024px) {
+    .buttonmid {
+        margin-left: 150px;
+        gap: 15px;
+    }
+
+    .bigbox {
+        height: auto;
+        text-align: center;
+    }
+
+    .circle {
+        height: 250px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modify {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .container {
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .circle2 {
+        height: 280px;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about, .me, .frontend, .developer {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .experience {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .smallbox1 {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .abc input, .area {
+        width: 90%;
+    }
+}
+
+
+    
     </style>
 </head>
 <body>
-    <form action="submit.php">
-    <div class="container"> <h1>Enter details</h1>
-        <div>
-        <input class="email" type="email" placeholder="Enter your email">
-    </div>
-    <div>
-        <input type="password" placeholder="Enter your password" required>
-    </div>
-    <div class="botton">
-        <button class="login">Login</button>
-    </div>
+    <div class="header">
+        <div> <span class="buttonfirst">Wajid</span> <span class="buttonfirsts">Hussain</span>
+        </div>
+
+        <div class="buttonmid">
+            <h3 class="mid">Portfolio</h3>
+            <h3 class="midp">Services</h3>
+            <h3 class="midpo">Experience</h3>
+            <h3 class="midpoi">Projects</h3>
+            <h3 class="midpoin">Education</h3>
+            <div>
+          <button class="buttonend">Contact Me</button>
+        </div>
+
+        </div>
+          
     </div>
 
-     </form>
+        <div class="bigbox">
+            <div class="circle">
+                <img src="IMG_20241128_155934.jpg" alt=" Error image loading">
+            </div>
+
+            <div class="modify">
+            <footer class="w">Hi</footer>
+            <footer class="wa">I'm <span class="wajidhussain">WajidHussain</span> </footer>
+            <footer class="waj"> a Frontend Developer</footer>
+            <footer class="waji">My name is Wajid Hussain. I am working as a Front-End Developer,focusing on creating responsive and user-friendly websites. Currently I am studying in Web Development and Designing at Vocational Training Institute</footer>
+         </div>
+
+         <div> 
+            <button class="modification">Hire Me</button> <button class="modifications">Experience</button>
+         </div>
+        
+        </div>
+        </div>
+
+        <div class="container">
+                                    
+                 <div class="circle2">
+                    <img src="IMG_20241128_155934.jpg" alt="">
+                 </div> 
+              
+                <span class="about">About</span> <span class="me">Me</span>
+                 <div>
+                <span class="frontend">Frontend</span> <span class="developer">Developer</span>
+                </div>
+                <div>
+                    <span class="para">My name is Wajid Hussain. I have completed my FSc Pre-Engineering from Degree College Muzaffargarh. Currently I am studying Web Development and Designing at Vocational Training Institute. I am worrking as a Front-End Developer,focusing on creating responsive and user-friendly websites. I have a strong interest in modern web technologies and always strive to enhance my skills. I live in Muzaffargarh and I am Always eager to learn new skills and stay updated with the latest trends in Web Development My goal is to enhance my skills and contribute to innovative projects in the fields of Web Development </span class="para">
+                </div>
+
+                 <button class="experience">Experience</button>
+
+        </div> 
+
+        <div class="box1">
+
+            <div class="smallbox1">
+              <span class="wajid">Contact</span> <span class="hussain">Me</span>
+              <form action="backend.php">
+
+                <div class="abc">
+
+                <div>
+                <input type="text" placeholder="Full Name">
+              </div>
+                <div>
+                <input type="text" placeholder="Email">
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number">
+              </div>
+              <div>
+                <input type="text" placeholder="Subject">
+              </div>
+              <div>
+                <textarea class="area" name="text" placeholder="Your Message"></textarea>
+              </div>
+
+              <div>
+                <button class="sendmessage"> Send Message</button>
+              </div>
+
+            </div>
+
+
+              </form>              
+
+            </div>
+
+        </div>
+        
+
+    
 </body>
 </html>
